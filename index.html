@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart PLP Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Flipkart</h1>
+    <input type="text" id="search" placeholder="Search for products..." oninput="searchProducts()" />
+  </header>
+
+  <section class="products-list">
+    <div class="product-card" data-id="1">
+      <img src="download.jfif" alt="Product Image">
+      <h2>Speaker</h2>
+      <p>₹299</p>
+      <button onclick="goToPDP(1)">View Details</button>
+    </div>
+    <div class="product-card" id="2">
+      <img src="second.webp" alt="Product Image">
+      <h2>Smartwatch</h2>
+      <p>₹499</p>
+      <button onclick="goToPDP(2)">View Details</button>
+    </div>
+    <div class="product-card" data-id="3">
+      <img src="projector.jfif" alt="Product Image">
+      <h2>Projector</h2>
+      <p>₹1999</p>
+      <button onclick="goToPDP(3)">View Details</button>
+    </div>
+    <div class="product-card" data-id="4">
+      <img src="monitor.webp" alt="Product Image">
+      <h2>Monitor</h2>
+      <p>₹9888</p>
+      <button onclick="goToPDP(4)">View Details</button>
+    </div>
+    <div class="product-card" data-id="5">
+        <img src="cloth.webp" alt="Product Image">
+        <h2>Men Printed Round Neck Cotton Blend Black T-Shirt</h2>
+        <p>₹199</p>
+        <button onclick="goToPDP(5)">View Details</button>
+      </div>
+    
+  </section>
+
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">X</span>
+      <h2 id="modalProductTitle"></h2>
+      <img id="modalProductImage" src="" alt="Product Image">
+      <p id="modalProductDescription"></p>
+      <p id="modalProductPrice"></p>
+     
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
